@@ -21,4 +21,17 @@ public class TicketRepo {
         }
         return null;
     }
+
+    public List<Ticket> getTicketsByStatus(String status) {
+    List<Ticket> filteredTickets = new ArrayList<>();
+
+    for (Ticket ticket : tickets) {
+        if (ticket.getStatus().equalsIgnoreCase(status)) {
+            filteredTickets.add(ticket);
+        }
+    }
+
+    return filteredTickets;
+    }
+
 }
