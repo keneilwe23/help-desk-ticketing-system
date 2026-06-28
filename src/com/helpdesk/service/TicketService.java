@@ -22,4 +22,9 @@ public class TicketService {
             ticket.setStatus(status);
         }
     }
+
+    public List<Ticket> getTicketsByStatus(String status) {
+    return repo.getTicketsByStatus(status);
+    
+    }
 }
