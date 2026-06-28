@@ -12,7 +12,8 @@ public class ConsoleView {
             System.out.println("\n1. Create Ticket");
             System.out.println("2. View Tickets");
             System.out.println("3. Update Ticket");
-            System.out.println("4. Exit");
+            System.out.println("4. System info");
+            System.out.println("5. Exit");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
