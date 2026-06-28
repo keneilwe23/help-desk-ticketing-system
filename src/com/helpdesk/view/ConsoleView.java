@@ -40,6 +40,12 @@ public class ConsoleView {
                     break;
 
                 case 4:
+                    System.out.print("Enter status (Open, In Progress, Closed): ");
+                    String status2 = scanner.nextLine();
+                    controller.filterTickets(status2);
+                    break;
+
+                case 5:
                     return;
             }
         }
