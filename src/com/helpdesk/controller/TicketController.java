@@ -16,4 +16,8 @@ public class TicketController {
     public void updateTicket(int id, String status) {
         service.updateStatus(id, status);
     }
+
+    public void filterTickets(String status) {
+    service.getTicketsByStatus(status).forEach(System.out::println);
+    }
 }
